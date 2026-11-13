@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="200"
+        Width="300" Height="200"
+        x:Class="Desktop.MainWindow"
+        Title="Desktop">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid ColumnDefinitions="100,*" RowDefinitions="35,35,35,35" RowSpacing="10">
+            <TextBlock Grid.Column="0" Grid.Row="0">Username</TextBlock>
+            <TextBox Name="Username" Grid.Column="1" Grid.Row="0" Width="150"></TextBox>
+        
+             <TextBlock Grid.Column="0" Grid.Row="1">Password</TextBlock>
+            <TextBox Name="Password" Grid.Column="1" Grid.Row="1" Width="150"></TextBox>
+            
+             <CheckBox Grid.Column="1" Grid.Row="2">Remember me</CheckBox>
+
+             <Button Click="OkClick" Grid.Column="0" Grid.Row="3">Ok</Button>
+            <Button Click="CancelClick" Grid.Column="1" Grid.Row="3">Cancel</Button>
+        </Grid>
+    </StackPanel>
+
+
+</Window>
